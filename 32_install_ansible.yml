@@ -1,0 +1,108 @@
+# How to install Ansible in CentOS 8
+
+#!/bin/bash
+sudo yum install epel-release
+sudo yum install ansible
+
+# How to install Ansible in CentOS 8 Stream
+
+#!/bin/bash
+$ sudo yum install epel-next-release
+$ sudo yum install ansible
+
+# How to install Ansible in Fedora 34
+
+#!/bin/bash
+$ sudo dnf list available ansible
+$ sudo dnf install ansible
+
+# How to install Ansible in Windows 10 WSL Windows Subsystem for Linux
+
+wsl --help
+wsl --list -o
+wsl --install
+
+# How to install Ansible in Rocky Linux 8
+
+#!/bin/bash
+sudo dnf install epel-release
+sudo dnf install ansible
+ansible --version
+
+# How to install Ansible in Debian 11
+
+#!/bin/bash
+$ sudo apt-get update
+$ sudo apt-get install ansible
+$ sudo apt list –installed ansible
+
+# How to install Ansible in Amazon Linux 2 (AWS EC2)
+
+#!/bin/bash
+$ sudo yum update -y
+$ sudo amazon-linux-extras install ansible2 -y
+$ ansible --version
+
+# How to install Ansible in CentOS 9 Stream
+
+#!/bin/bash
+sudo dnf install ansible-core
+
+#  How to install Ansible in Ubuntu 21.10
+
+#!/bin/bash
+sudo apt update
+sudo apt install ansible
+
+# How to install Ansible in Ubuntu 21.10
+#!/bin/bash
+sudo apt update
+sudo apt install ansible
+
+# How to install Ansible in Fedora 35
+#!/bin/bash
+$ sudo dnf list available ansible
+$ sudo dnf install ansible
+$ sudo "rpm -qa | grep ansible"
+$ sudo dnf list ansible
+
+# How to install Ansible in Arch Linux 2021.12.01
+#!/bin/bash
+sudo pacman -Syu
+sudo pacman -Si ansible
+sudo pacman -S ansible
+sudo pacman -Q | grep ansible
+
+# How to install Ansible in AlmaLinux 8
+#!/bin/bash
+sudo yum install epel-release
+sudo yum install ansible
+
+# How to install Ansible in SUSE Linux Enterprise Server (SLES) 15 SP3
+#!/bin/bash
+SUSEConnect --status
+SUSEConnect --list-extensions
+SUSEConnect -p PackageHub/15.3/x86_64
+zypper install ansible
+zypper info ansible
+ansible --version
+
+# How to install Ansible in Gentoo Linux
+#!/bin/bash
+$ sudo emerge --sync
+$ sudo emerge --ask app-admin/ansible
+$ sudo emerge -pv app-admin/ansible
+
+# How to install Ansible in Windows 11 WSL Windows Subsystem for Linux 
+wsl --help
+wsl --list -o
+wsl --install
+
+# How to install Ansible in Oracle Linux 8
+#!/bin/bash
+sudo yum install oracle-epel-release-el8
+sudo yum install ansible
+
+How to install Ansible in RedHat Enterprise Linux (RHEL) 9 Beta
+#!/bin/bash
+sudo dnf install ansible-core
