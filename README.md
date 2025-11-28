@@ -45,8 +45,23 @@ Example 1_ping.yml:
   tasks:
     - name: Ping hosts
       ansible.builtin.ping:
-
 ```
+# Installing Ansible on Ubuntu 20.04
+    sudo apt update
+    sudo apt install ansible
+# Using official Ansible PPA (newer version)
+    #!/bin/bash
+    set -e
+    
+    sudo apt update
+    sudo apt install -y software-properties-common
+    sudo add-apt-repository --yes --update ppa:ansible/ansible
+
+# remove old Ansible if needed
+sudo apt remove -y ansible
+
+# install ansible-core / community package
+sudo apt install -y ansible
 
 # Install a package in RedHat-like systems - Ansible module yum
 # Install a package in Debian-like systems - Ansible module apt
