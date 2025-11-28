@@ -1,5 +1,6 @@
 # Ansiblepilot
     Based on: https://www.ansiblepilot.com/
+    Personal cheat sheet for common Ansible tasks and troubleshooting.
 
 # Test host availability - Ansible module ping:
     ansible-playbook -i inventory 1_ping.yml 
@@ -24,6 +25,28 @@
 # Print text or variable during execution - Ansible module debug
     - use -vv to print variable in verbose 
     ansible-playbook -i inventory -vv 5_print_variable.yml
+
+# Target a specific host or group:
+    ansible-playbook -i inventory site.yml --limit webservers
+# Increase verbosity (useful for troubleshooting):
+    ansible-playbook -i inventory site.yml -v    # verbose
+    ansible-playbook -i inventory site.yml -vvv  # very verbose
+
+# Test host availability – ping module:
+    ansible -i inventory all -m ping
+    ansible-playbook -i inventory 1_ping.yml
+Example 1_ping.yml:
+ ```
+    ---
+- name: Test host availability
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Ping hosts
+      ansible.builtin.ping:
+
+```
 
 # Install a package in RedHat-like systems - Ansible module yum
 # Install a package in Debian-like systems - Ansible module apt
